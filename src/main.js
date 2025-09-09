@@ -24,8 +24,8 @@ menuBtn?.addEventListener("click", () => {
 const links = document.querySelectorAll("header a");
 links.forEach(link => {
   link.addEventListener("click", () => {
-    links.forEach(l => l.classList.remove("text-[#00ADB5]"));
-    link.classList.add("text-[#00ADB5]");
+    links.forEach(l => l.classList.remove("text-[#ffff]"));
+    link.classList.add("text-[#fffff]");
   });
 });
 
