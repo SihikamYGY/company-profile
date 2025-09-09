@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "@midudev/tailwind-animations";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+  --font-display: "Montserrat", sans-serif; 
+}
+
+/* 🎨 Custom styles */
+html {
+  scroll-behavior: smooth;
+}
+
+.menu:active{
+  color: #eeeeee23;
+}
+
+.menu-anim {
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.menu-anim.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Hilangin scrollbar di semua browser */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE dan Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

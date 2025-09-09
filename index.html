@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Company Profile</title>
+  <link rel="icon" type="image/x-icon" href="src/image/download (6).jpg" />
+  <script src="https://kit.fontawesome.com/b6b49c6ad2.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="font-display bg-base-100 m-0 p-0 w-full overflow-x-hidden scrollbar-hide bg-white">
+  <!-- 🌐 Navbar -->
+  <header id="navbar" class="fixed top-0 left-0 w-full bg-[#222831] shadow z-50 transition-all duration-300 ease-in-out animate-slide-in-top">
+    <div class="navbar w-full md:max-w-6xl md:mx-auto px-4">
+      <div class="flex-1">  
+        <a class="text-2xl font-bold text-[#EEEEEE]" href="#">KamiiShoes</a>
+      </div>
+
+      <div class="hidden md:flex">
+        <ul class="menu menu-horizontal gap-4 font-medium text-[#EEEEEE]">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden relative">
+        <button id="menu-btn" class="btn btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-[#EEEEEE]" fill="none" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <ul id="mobile-menu" class="absolute right-0 mt-3 w-52 bg-[#222831] rounded-box p-2 shadow text-[#EEEEEE] menu-anim text-sm">
+          <li><a href="#home">Home</a></li>
+          <li class="mt-2"><a href="#about">About</a></li>
+          <li class="mt-2"><a href="#services">Services</a></li>
+          <li class="mt-2"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- 🏠 Hero Section -->
+  <section id="home" class="hero min-h-screen bg-white text-white flex justify-center items-center pt-20 w-full px-4">
+    <div class="hero-content gap-5 flex-col lg:flex-row-reverse text-right w-full md:max-w-6xl md:mx-auto">
+      <div class="text-box z-50 lg:mr-10 animate-slide-out-left">
+        <h1 class="text-5xl md:text-8xl text-black font-bold">WE <br>SERVE CUSTOMER</h1>
+        <p class="text-black font-semibold mt-4">LOVED TO BE KIND TO CUSTOMERS*</p>
+      </div>
+      <div class="image-box relative flex items-center justify-center animate-slide-out-right">
+        <div class="circle absolute h-72 w-72 md:h-96 md:w-96 z-10 backdrop-blur-2xl bg-[#57437E] rounded-full"></div>
+        <img src="src/image/nike-shoes-rmv-bg.png" 
+             alt="shoes" 
+             class="relative w-full max-w-sm md:max-w-4xl rounded-lg z-20" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ℹ️ About Section -->
+  <section id="about" class="relative py-20 bg-white overflow-hidden w-full ">
+    <div class="absolute top-10 -left-20 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+    <div class="absolute bottom-0 -right-20 w-80 h-80 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+
+    <div class="w-full md:max-w-7xl md:mx-auto relative z-10">
+      <h2 class="text-3xl md:text-5xl font-bold text-center  animate-slide-in-top">About Us</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="flex justify-center relative animate-slide-out-right">
+          <img src="src/image/nike-1.jpg" 
+               alt="Sepatu Koleksi Kami" 
+               class="rounded-2xl shadow-xl w-full h-auto object-cover relative z-20" />
+        </div>
+
+        <div class="animate-slide-out-left md:ml-5 sm:ml-5">
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            <span class="font-semibold">KamiiShoes</span> adalah toko sepatu yang menghadirkan 
+            koleksi stylish dan nyaman untuk segala aktivitasmu. Dari sneakers kasual hingga sepatu formal, 
+            semua hadir dengan kualitas terbaik dan harga terjangkau.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 mt-6">
+            <div class="flex items-center gap-3">
+              <span class="bg-blue-500 text-white p-2 rounded-full">⭐</span>
+              <p class="text-gray-700 font-medium">Kualitas Premium</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="bg-green-500 text-white p-2 rounded-full">🚚</span>
+              <p class="text-gray-700 font-medium">Gratis Ongkir</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="bg-yellow-500 text-white p-2 rounded-full">🛒</span>
+              <p class="text-gray-700 font-medium">Banyak Pilihan</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="bg-pink-500 text-white p-2 rounded-full">💳</span>
+              <p class="text-gray-700 font-medium">Harga Terjangkau</p>
+            </div>
+          </div>
+
+          <a href="#shop" 
+             class="inline-block mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition">
+            Lihat Koleksi
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections Secttion -->
+  <section id="collections" class="relative py-20 bg-white overflow-hidden w-full min-h-screen text-center flex justify-center items-center flex-col">
+    <div class="flex w-full justify-around">
+      <h1 class="font-bold text-4xl mb-12">New Arrivals | <span class="font-normal">Good Product</span></h1>
+      <button class="bg-black h-10 w-15 rounded-full">
+        <i class="fa-solid fa-arrow-right fa-xl" style="color: #ffffff;"></i>
+      </button>
+      
+    </div>
+      
+    
+    <div class="grid md:grid-cols-3 gap-17">
+      <div class="w-100 h-100 rounded-3xl">
+        <img src="src/image/nike-low-dunk.jpg" alt="Nike Dunk Low Retro" class="rounded-4xl">
+        <h3 class="font-semibold">Nike Dunk Low Retro</h3>
+        <label for="#">$99</label>
+      </div>
+      <div class="w-100 h-100 rounded-3xl">
+        <img src="src/image/nike-low-dunk.jpg" alt="Nike Dunk Low Retro" class="rounded-4xl">
+        <h3 class="font-semibold">Nike Dunk Low Retro</h3>
+        <label for="#">$99</label>
+      </div>
+      <div class="w-100 h-100 rounded-3xl">
+        <img src="src/image/nike-low-dunk.jpg" alt="Nike Dunk Low Retro" class="rounded-4xl">
+        <h3 class="font-semibold">Nike Dunk Low Retro</h3>
+        <label for="#">$99</label>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 💼 Services Section -->
+  <section id="services" class="py-20 bg-base-200 min-h-screen w-full px-4 flex justify-center items-center bg-white">
+    <div class="w-full md:max-w-6xl md:mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-5">Our Services</h2>
+        <p>Kami selalu berkomitmen untuk memberikan pengalaman terbaik kepada setiap pelanggan. Berikut adalah layanan utama yang menjadi keunggulan kami:</p>
+      </div>
+      
+
+      <div class="grid md:grid-cols-3 gap-8"> 
+        <div class="card bg-base-100 shadow-xl p-6 text-center items-center justify-center">
+          <span class="bg-blue-500 text-white p-2 rounded-full mb-2 text-5xl w-30">⭐</span>
+          <h3 class="text-xl font-semibold mb-2">Original & Berkualitas</h3>
+          <p class="text-gray-600">Kami hanya menyediakan produk asli dan terjamin kualitasnya, sehingga pelanggan dapat berbelanja dengan tenang tanpa khawatir tentang keaslian barang.</p>
+        </div>
+        <div class="card bg-base-100 shadow-xl p-6 text-center items-center justify-center">
+          <span class="bg-blue-500 text-white p-2 rounded-full mb-2 text-5xl w-30">🛒</span>
+          <!-- <p>💸</p> -->
+          <h3 class="text-xl font-semibold mb-2">Aman Untuk Dompet Anda</h3>
+          <p class="text-gray-600">Dengan harga yang bersahabat dan kompetitif, kami memastikan setiap pelanggan bisa mendapatkan produk terbaik tanpa harus menguras kantong.</p>
+        </div>
+        <div class="card bg-base-100 shadow-xl p-6 text-center items-center justify-center">
+          <span class="bg-blue-500 text-white p-2 rounded-full mb-2 text-5xl w-30">😀</span>
+          <h3 class="text-xl font-semibold mb-2">Karyawan Yang Ramah</h3>
+          <p class="text-gray-600">Tim kami selalu siap melayani dengan senyum, ramah, dan penuh perhatian, sehingga setiap interaksi terasa nyaman dan menyenangkan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📞 Contact Section -->
+  <section id="contact" class="w-full  min-h-screen grid grid-cols-1 md:grid-cols-2 items-center justify-center m-10">
+    <div class="image w-full h-fit">
+      <img src="src/image/nike-1.jpg" alt="">
+    </div>
+    <div class="w-full md:max-w-6xl md:mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
+      <form class="card bg-base-100 shadow-xl p-6 w-full max-w-2xl mx-auto space-y-4">
+        <div class="form-control">
+          <input type="text" placeholder="Your Name" class="input input-bordered w-full" />
+        </div>
+        <div class="form-control">
+          <input type="email" placeholder="Your Email" class="input input-bordered w-full" />
+        </div>
+        <div class="form-control">
+          <textarea placeholder="Your Message" class="textarea textarea-bordered w-full"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 🦶 Footer -->
+  <footer class="footer footer-center bg-[#222831] text-white font-bold py-6 w-full px-4">
+    <aside>
+      <p>&copy; 2025 KamiiShoes. All rights reserved.</p>
+    </aside>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
